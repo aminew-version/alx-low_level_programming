@@ -1,11 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* more headers goes there */
-/* betty style doc for function main goes there */
+/**
+ * main - 0. Positive anything is better than negative nothing
+ * Return: 0
+ */
 int main(void)
 {
-/* this function is the entry point of the all program */
 	int n;
 
 	srand(time(0));
