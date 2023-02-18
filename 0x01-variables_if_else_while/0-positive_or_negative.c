@@ -5,6 +5,7 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
+/* this function is the entry point of the all program */
 	int n;
 
 	srand(time(0));
