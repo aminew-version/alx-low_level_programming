@@ -14,7 +14,7 @@ int main(void)
 	if (n <= 'z')
 	{
 		putchar(n);
-		n++;
+		++n;
 	}
 	return (0);
 }
