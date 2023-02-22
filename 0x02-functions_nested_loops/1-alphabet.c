@@ -1,10 +1,9 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * main - Prototype: void print_alphabet(void);
  * Return: 0
  */
-int main(void)
+void print_alphabet(void)
 {
 	char c;
 
