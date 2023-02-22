@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * main - Prototype: void print_alphabet(void);
- * Return: 0
+ * print_alphabet - Prototype: void print_alphabet(void);
+ * Return
  */
 void print_alphabet(void)
 {
