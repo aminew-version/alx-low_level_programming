@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _isupper - prints characters
  *
@@ -9,5 +8,17 @@
  */
 int _isupper(int c)
 {
-	return (c >= 65 && c <= 90)
+	char c = '48';
+	
+	char b = '49';
+	
+	if (c >= 'A' && c <= 'Z')
+	{
+		_putchar(b);
+	}
+	else
+	{
+		_putchar(c);
+	}
+	return (0);
 }
