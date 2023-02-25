@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * power - exponents
- * @base: base
- * @exp: exponent
+ * print_number - exponents
+ * @n: number
  * Return: result (int)
  */
 void print_number(int n)
