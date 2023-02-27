@@ -7,10 +7,9 @@
  */
 int _strlen(char *s)
 {
-	int len;
+	int length;
 
-	len = _strlen(s);
+	length = strlen(s);
 
-	printf("the length of the string: %d\n", len);
-	return (0);
+	return (length);
 }
