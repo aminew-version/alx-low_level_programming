@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * cap_string - captilize all
+ * @st: array name
  * Return: char
  */
 char *cap_string(char *st)
