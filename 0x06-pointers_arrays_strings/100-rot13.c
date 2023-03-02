@@ -7,32 +7,23 @@
  */
 char *rot13(char *st)
 {
-	int l = 0;
+	int x;
+	int y;
 
-	int m = 0;
+	char s1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char s2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	char nor[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-
-	while (st[l] != '\0')
+	for (x = 0; st[x] != '\0'; x++)
 	{
-		while (nor[m] != '\0')
+		for (y = 0; s1[y] != '\0'; y++)
 		{
-			if (st[l] == nor[m])
+			if (st[x] == s1[y])
 			{
-				st[l] = rot[m];
+				st[x] = s2[y];
 				break;
 			}
-
-			m++;
-
 		}
-		st[l] = st[l];
-
-		l++;
-
 	}
 
 	return (st);
-
 }
