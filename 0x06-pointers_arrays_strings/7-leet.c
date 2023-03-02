@@ -4,13 +4,25 @@
  * @s: aray of string
  * Return: 0
  */
-char *leet(char *s)
+char *leet(char *st)
 {
-	int i, j;
-	char special[20] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	int x = 0;
+	int y = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	char arry1[] = "aAeEoOtTlL";
+	char arry2[] = "4433007711";
+
+	while (st[x] != '\0')
 	{
-		if 
-	}	
+		while (y < 10)
+		{
+			if (st[x] == arry1[y])
+			{
+				st[x] = arry2[y];
+			}
+			y++;
+		}
+		x++;
+	}
+	return (st);
 }
