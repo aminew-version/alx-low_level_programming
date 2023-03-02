@@ -21,11 +21,17 @@ char *rot13(char *st)
 			if (st[l] == nor[m])
 			{
 				st[l] = rot[m];
+				break;
 			}
+
 			m++;
+
 		}
+
 		l++;
+
 	}
 
 	return (st);
+
 }
