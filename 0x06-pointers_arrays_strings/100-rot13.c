@@ -27,6 +27,7 @@ char *rot13(char *st)
 			m++;
 
 		}
+		st[l] = st[l];
 
 		l++;
 
