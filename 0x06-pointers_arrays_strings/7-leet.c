@@ -6,23 +6,19 @@
  */
 char *leet(char *st)
 {
-	int x = 0;
-	int y = 0;
+	int x, y;
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
 
-	char arry1[] = "aAeEoOtTlL";
-	char arry2[10] = "4433007711";
-
-	while (st[x] != '\0')
+	for (x = 0; st[x] != '\0'; x++)
 	{
-		while (arry2[y] < 10)
+		for (y = 0; y < 10; y++)
 		{
-			if (st[x] == arry1[y])
+			if (st[x] == s1[y])
 			{
-				st[x] = arry2[y];
+				st[x] = s2[y];
 			}
-			y++;
 		}
-		x++;
 	}
 	return (st);
 }
