@@ -10,11 +10,11 @@ char *leet(char *st)
 	int y = 0;
 
 	char arry1[] = "aAeEoOtTlL";
-	char arry2[] = "4433007711";
+	char arry2[10] = "4433007711";
 
 	while (st[x] != '\0')
 	{
-		while (y < 10)
+		while (arry2[y] < 10)
 		{
 			if (st[x] == arry1[y])
 			{
