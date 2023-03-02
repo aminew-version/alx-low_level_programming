@@ -5,12 +5,28 @@
  *
  * Return: char
  */
-char *rot13(char *)
+char *rot13(char *st)
 {
-	int i;
+	int l = 0;
 
-	for (i = 0; st[i] != '\0'; i++)
+	int m = 0;
+
+	char nor[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+	while (st[l] != '\0')
 	{
-
+		while (nor[m] != '\0')
+		{
+			if (st[l] == nor[m])
+			{
+				st[l] = rot[m];
+				break;
+			}
+			m++;
+		}
+		l++;
 	}
+
+	return (st);
 }
